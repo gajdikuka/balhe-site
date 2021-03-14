@@ -1,0 +1,36 @@
+body {
+    font-family: Barlow, sans-serif !important;
+}
+
+.balhe-red {
+    color: #FD1350 !important;
+}
+
+.balhe-blue {
+    color: #263683 !important;
+}
+
+.ls-minus1 {
+    letter-spacing: -0.3rem !important;
+}
+
+.mx-15 {
+    margin-right: 30rem!important;
+    margin-left: 30rem!important;
+}
+
+.hero {
+    height: 70vh;
+}
+
+.scroll-arrow {
+    width: 71px;
+    height: 31px;
+    border: 7px solid #263683;
+    box-sizing: border-box;
+    transform: rotate(-180deg);
+}
+
+.balhe-footer {
+    height: 70vh;
+}
