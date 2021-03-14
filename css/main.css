@@ -10,6 +10,14 @@ body {
     color: #263683 !important;
 }
 
+.bg-balhe-red {
+    background-color: #FD1350 !important;
+}
+
+.bg-balhe-blue {
+    background-color: #263683 !important;
+}
+
 .ls-minus1 {
     letter-spacing: -0.3rem !important;
 }
@@ -29,6 +37,16 @@ body {
     border: 7px solid #263683;
     box-sizing: border-box;
     transform: rotate(-180deg);
+}
+
+.product-label {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+
+.product-box {
+    position: relative;
 }
 
 .balhe-footer {
