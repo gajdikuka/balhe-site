@@ -32,16 +32,16 @@ body {
     margin-left: 30rem!important;
 }
 
-.hero {
-    height: 70vh;
+.mt-n1 {
+    margin-top: -0.25rem !important;
 }
 
-.scroll-arrow {
-    width: 71px;
-    height: 31px;
-    border: 7px solid #263683;
-    box-sizing: border-box;
-    transform: rotate(-180deg);
+.mt-n2 {
+    margin-top: -1rem !important;
+}
+
+.hero {
+    height: 70vh;
 }
 
 .product-label {
@@ -55,38 +55,28 @@ body {
 }
 
 .balhe-footer {
-    height: 70vh;
-    position: relative;
     margin-top: 12rem!important;
-    margin-bottom: 5rem!important;
+    margin-bottom: 3rem!important;
 }
 
-.insta {
-    position: absolute;
-    left: 0px;
-    top: 90px;
+.social {
+    text-align: right;
 }
 
-.behance {
-    position: absolute;
-    left: 130px;
-    bottom: 130px;
+.scroll-arrow {
+    width: 70px !important;
 }
 
-.email {
-    position: absolute;
-    left: 580px;
-    bottom: 160px;
-}
-
-.facebook {
-    position: absolute;
-    right: 0px;
-    bottom: 0px;
-}
-
-.myvip {
-    position: absolute;
-    right: 200px;
-    top: 0px;
+@media (max-width: 768px) {
+    .scroll-arrow {
+        width: 50px !important;
+    }
+    .mace {
+        z-index: -100;
+        position: absolute;
+        right: 0;
+    }
+    .social {
+        text-align: left;
+    }
 }

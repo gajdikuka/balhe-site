@@ -23,15 +23,15 @@
                  <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="balhe-navbar">
-                    <ul class="navbar-nav fs-2 fw-bold">
+                    <ul class="navbar-nav fs-4 fw-bold">
                         <li class="nav-item">
-                            <a class="nav-link balhe-blue" href="#">Munkák</a>
+                            <a class="nav-link balhe-blue" href="works.html">Munkák</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item d-none d-sm-block">
                             <a class="nav-link disabled ls-minus1 balhe-blue" href="#" tabindex="-1">&#8212;&#8212;&#8212;&#8212;</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link balhe-blue" href="#">Kapcsolat</a>
+                            <a class="nav-link balhe-blue" href="contact.html">Kapcsolat</a>
                         </li>
                     </ul>
                 </div>
@@ -51,14 +51,51 @@
         </div>
         <div class="row align-items-center mb-5">
             <div class="col-12">
-                <img src="img/scroll_arrow.svg" alt="scroll arrow" width="70">
+                <img class="scroll-arrow" src="img/scroll_arrow.svg" alt="scroll arrow">
             </div>
         </div>
-
-
     </div>
     <main>
-        <div class="container-fluid">
+        <div id="productCarousel" class="carousel slide d-md-none" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/product/rectangle1.png" alt="product1" width="100%">
+                    <div class="product-label">
+                        <h2 class="display-7 balhe-blue">Sour Series 1</h2>
+                        <h2 class="fw-bold display-7 balhe-blue">Beer Label Design</h2>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/product/rectangle2.png" alt="product2" width="100%">
+                    <div class="product-label">
+                        <h2 class="display-7 balhe-blue">Sour Series 1</h2>
+                        <h2 class="fw-bold display-7 balhe-blue">Beer Label Design</h2>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/product/rectangle1.png" alt="product1" width="100%">
+                    <div class="product-label">
+                        <h2 class="display-7 balhe-blue">Sour Series 1</h2>
+                        <h2 class="fw-bold display-7 balhe-blue">Beer Label Design</h2>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <div class="container-fluid d-none d-md-block">
             <div class="row">
                 <div class="col-md-4 p-0 product-box">
                     <img src="img/product/rectangle1.png" alt="product1" width="100%">
@@ -106,32 +143,37 @@
                 </div>
             </div>
         </div>
+        <footer class="my-5">
+            <div class="container-fluid px-5">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h2 class="fw-bold display-7 balhe-blue">Balhé</h2>
+                        <h2 class="fw-bold display-7 balhe-red mt-n2">Crush your face</h2>
+                        <img class="my-3" src="img/footer-line.svg" width="40%">
+                        <h2 class="fw-bold display-7 balhe-blue mt-3">hello@balhestudio.com</h2>
+                    </div>
+                    <div class="col-md-4 order-1 order-md-0 d-flex">
+                        <img class="mx-auto d-block" src="img/mace.svg" alt="product1" width="50%">
+                    </div>
+                    <div class="social col-md-4">
+                        <a class="balhe-blue" href="#">
+                            <h2 class="fw-bold display-7 balhe-blue">INSTAGRAM</h2>
+                        </a>
+                        <a class="balhe-blue" href="#">
+                            <h2 class="fw-bold display-7 balhe-blue">FACEBOOK</h2>
+                        </a>
+                        <a class="balhe-blue" href="#">
+                            <h2 class="fw-bold display-7 balhe-blue">BEHANCE</h2>
+                        </a>
+                        <a class="balhe-blue" href="#">
+                            <h2 class="fw-bold display-7 balhe-blue">MYVIP</h2>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </main>
-
-
-    <footer class="balhe-footer mx-10">
-        <div class="container-fluid">
-            <a href="#">
-                <img class="insta" src="img/social/insta.svg" alt="instagram">
-            </a>
-            <a href="#">
-                <img class="behance" src="img/social/behance.svg" alt="behance">
-            </a>
-            <a href="#">
-                <img class="email" src="img/social/email.svg" alt="email">
-            </a>
-            <a href="#">
-                <img class="facebook" src="img/social/facebook.svg" alt="facebook">
-            </a>
-            <a href="#">
-                <img class="myvip" src="img/social/myvip.svg" alt="myvip">
-            </a>
-        </div>
-
-    </footer>
-
-
-
+    <script src="js/bootstrap.min.js"></script>
 </body>
 
 </html>
